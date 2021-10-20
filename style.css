@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cream: #E6DACE;
+    --white: #FFFEFE;
+    --lightcream: #F5EDE6;
+    --shd: -11.31px 11.31px 17px 0px rgba(138,131,124,0.23);
+}
+
+html, body, main {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    min-width: 1280px;
+}
+
+.profile-insight {
+    display: flex;
+}
+
+.insight-left {
+    width: 39%;
+}
+
+.insight-right {
+    width: 61%;
+}
+
+.profile-insight-detail {
+    min-width: 1280px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+
+.profile-insight-detail img {
+    width: 248px;
+    height: 248px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile-insight-detail-left {
+    margin-left: 128px;
+    min-width: 430px;
+    background-color: var(--lightcream);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .8));
+    padding: 0;
+}
+
+.profile-insight-detail-left article {
+    padding: 64px;
+}
+
+.profile-insight-detail-left h4 {
+    line-height: 1.2em;
+    font-size: 34px;
+}
+
+.profile-insight-detail-right {
+    padding: 48px;
+    width: 40%;
+    background-color: var(--white);
+}
+
+.profile-insight-detail-right h1 {
+    font-size: 128px;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-insight-detail-right h6 {
+    font-size: 36px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-insight-social-media {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 16px;
+}
+
+.profile-insight-social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Colors */
+.bg-cream {
+    background-color: var(--cream);
+}
+
+.bg-white {
+    background-color: var(--white);
+}

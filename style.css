@@ -10,8 +10,9 @@
 html, body, main {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    min-width: 1280px;
+    font-family: 'Poppins', sans-serif !important;
+    transition: 2s ease-in 1s;
+    min-width: 450px !important;
 }
 
 .profile-insight {
@@ -27,15 +28,12 @@ html, body, main {
 }
 
 .profile-insight-detail {
-    min-width: 1280px;
-    align-items: center;
     justify-content: center;
     position: absolute;
     top: 25%;
     left: 0;
     right: 0;
     margin: 0 auto;
-    display: flex;
     width: 100%;
 }
 
@@ -99,6 +97,14 @@ html, body, main {
     height: 30px;
 }
 
+.icon-scale-animate {
+    transition: all .25s ease-in-out;
+}
+
+.icon-scale-animate:hover {
+    transform: scale(1.3);
+}
+
 /* Colors */
 .bg-cream {
     background-color: var(--cream);
@@ -106,4 +112,25 @@ html, body, main {
 
 .bg-white {
     background-color: var(--white);
+}
+
+@media only screen and (max-width: 1033px) {
+    .profile-insight-detail {
+        top: 10%;
+    }
+
+    .profile-insight-detail-left {
+        margin-bottom: 64px;
+    }
+
+    .profile-insight-detail-right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .profile-insight-detail-left {
+        margin-left: 64px;
+        width: 300px;
+    }
 }

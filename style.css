@@ -12,7 +12,7 @@ html, body, main {
     margin: 0;
     font-family: 'Poppins', sans-serif !important;
     transition: 2s ease-in 1s;
-    min-width: 450px !important;
+    min-width: 400px !important;
 }
 
 .profile-insight {
@@ -41,7 +41,6 @@ html, body, main {
     width: 248px;
     height: 248px;
     object-fit: cover;
-    border-radius: 50%;
     margin: 0 auto;
 }
 
@@ -78,7 +77,6 @@ html, body, main {
 }
 
 .profile-insight-detail-right h6 {
-    font-size: 36px;
     font-weight: normal;
     padding: 0;
     margin: 0;
@@ -105,13 +103,107 @@ html, body, main {
     transform: scale(1.3);
 }
 
+.education-item {
+    display: flex;
+    margin-top: 16px;
+}
+
+.education-item img {
+    width: 150px;
+    height: 150px;
+}
+
+.education-item div {
+    width: 100%;
+}
+
+.education-item h4 {
+    font-weight: 600;
+}
+
+.item-details {
+    margin-bottom: 32px;
+}
+
+.item-details h5 {
+    font-weight: 600;
+}
+
+.rounded-10 {
+    border-radius: 10% !important;
+}
+
+.profile-cna img {
+    width: 45%;
+    padding: 16px 2.5%;
+    min-width: 330px;
+}
+
+.profile-cna img {
+    transition: all .15s ease-in-out;
+}
+
+.profile-cna img:hover {
+    transform: scale(1.1);
+}
+
+.profile-skills article {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.profile-skills article h4 {
+    font-weight: 600;
+}
+
+.slp-wrapper {
+    width: 48%;
+    margin: 16px 0px;
+    min-width: 330px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 16px;
+    border-radius: 12px;
+    transition: all .15s ease-in-out;
+}
+
+.slp-wrapper:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.project-list article {
+    width: 48%;
+    padding: 16px 0;
+    min-width: 330px;
+}
+
+.project-list article img {
+    width: 150px;
+    height: 150px;
+}
+
+.btn-view {
+    width: 100%;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px 0px;
+    transition: all .2s ease-in-out;
+    margin-top: 16px;
+}
+
+.btn-view:hover {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+
 /* Colors */
 .bg-cream {
-    background-color: var(--cream);
+    background-color: var(--cream) !important;
 }
 
 .bg-white {
-    background-color: var(--white);
+    background-color: var(--white) !important;
 }
 
 @media only screen and (max-width: 1033px) {
@@ -130,7 +222,41 @@ html, body, main {
 
 @media only screen and (max-width: 800px) {
     .profile-insight-detail-left {
-        margin-left: 64px;
+        margin-left: 16px;
         width: 300px;
+        min-width: 400px;
+    }
+
+    .profile-insight-detail-left article {
+        padding: 32px;
+    }
+
+    .profile-insight-detail-right {
+        padding: 24px;
+    }
+
+    .slp-wrapper {
+        width: 100%;
+    }
+
+    .project-list article {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .profile-insight-detail-left {
+        min-width: 300px;
+    }
+
+    .profile-insight-detail-left h4 {
+        font-size: 28px;
+        padding-bottom: 16px !important;
+        padding-top: 16px !important
+    }
+
+    .profile-insight-detail-left article img {
+        width: 150px;
+        height: 150px;
     }
 }

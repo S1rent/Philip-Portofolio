@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
 
         <title>Philip Indra Prayitno</title>
     </head>
@@ -21,7 +24,7 @@
                 <section class="profile-insight-detail d-flex align-items-center flex-wrap">
                     <div class="profile-insight-detail-left rounded-3">
                         <article>
-                            <img src="assets/avatar.jfif">
+                            <img class="rounded-circle" src="assets/avatar.jfif">
                             <h4 class="fw-bolder py-5">Philip Indra Prayitno</h4>
                             <span style="letter-spacing: 0.25em; font-size: 24px; font-weight: 300;">Software Engineer</span>
                         </article>
@@ -34,7 +37,7 @@
                     </div>
                     <div class="profile-insight-detail-right">
                         <h1 class="fw-bolder">Hello</h1>
-                        <h6 class="fw-600 mb-4">Here's who I am & what I do</h6>
+                        <h6 class="fw-600 mb-4" style="font-size: 36px;">Here's who I am & what I do</h6>
 
                         <p style="font-size: 22px; font-weight: 300;">
                             I am a software engineer based in Jakarta.<br>
@@ -44,9 +47,792 @@
                             I'm also working at Bina Nusantara IT Division as Mobile Programmer (Swift & React Native).
                             Please do not hesitate to contact me through my social media ✌️
                         </p>
+
+                        <div id="profile-sm-detail" style="display: none">
+                            <section class="profile-education py-5">
+                                <h2 class="fw-bold">Education 🎓</h2>
+                                <article class="education-item">
+                                    <img class="rounded-10" src="assets/ic-binus.jpg">
+                                    <div class="px-4">
+                                        <h4>Bina Nusantara</h4>
+                                        <h6><i>September 2019 - 2023 (Expected)</i></h6>
+                                        <hr>
+            
+                                        <ul>
+                                            <li class="item-details">
+                                                <h5>Student - Bachelor's Degree</h5>
+                                                Majoring in Computer Science, Minoring in Software Engineering.<br>
+                                                Currently in the 6th Semester with 3.95 GPA
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+            
+                                <article class="education-item">
+                                    <img class="rounded-10" src="assets/ic-styakobus.jpg">
+                                    <div class="px-4">
+                                        <h4>Santo Yakobus</h4>
+                                        <h6><i>2010 - 2019</i></h6>
+                                        <hr>
+            
+                                        <ul>
+                                            <li class="item-details">
+                                                <h5>Student - Senior High School</h5>
+                                                Majoring in Science, Graduated with total national exam score of (374.5 / 400)
+                                            </li>
+                                        </ul>
+            
+                                        <ul>
+                                            <li class="item-details">
+                                                <h5>Student - Junior High School</h5>
+                                                Graduated with total national exam score of (370 / 400)
+                                            </li>
+                                        </ul>
+            
+                                        <ul>
+                                            <li class="item-details">
+                                                <h5>Student - Elementary School</h5>
+                                                Graduated with total national exam score of (279 / 300)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+            
+                                <article class="education-item">
+                                    <img class="rounded-10" src="assets/ic-pk.png">
+                                    <div class="px-4">
+                                        <h4>Santo Yakobus</h4>
+                                        <h6><i>2007 - 2010</i></h6>
+                                        <hr>
+            
+                                        <ul>
+                                            <li class="item-details">
+                                                <h5>Student - Elementary School</h5>
+                                                Studying until the 3th grade, then transferred into Santo Yakobus Elementary School.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </section>
+                
+                            <section class="profile-experience py-5">
+                                <h2 class="fw-bold">Experience 💼</h2>
+                                <article class="education-item">
+                                    <img class="rounded-10" src="assets/ic-itdiv.jpg">
+                                    <div class="px-4">
+                                        <h4>Bina Nusantara - IT Division</h4>
+                                        <h6><i>March 2020 - Present</i></h6>
+                                        <hr>
+            
+                                        <ul>
+                                            <li class="item-details">
+                                                <h5>Junior Programmer</h5>
+                                                <h6><i>March 2021 - Present</i></h6>
+                                                <ul>
+                                                    <li>
+                                                        Maintain & develop modules for BINUSMAYA. 
+                                                        a new Learning Management System for BINUS University, built using React Native.
+                                                    </li>
+                                                    <li>
+                                                        Maintain & develop API for BINUS Mobile for Student, Lecturer, and Parent. 
+                                                        Written in C#, using ASP.NET MVC
+                                                    </li>
+                                                    <li>
+                                                        Maintain & develop modules for BINUS Mobile for Student, Lecturer, and Parent 
+                                                        a Learning Management System for BINUS University, written in Swift.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="item-details">
+                                                <h5>Associate Member</h5>
+                                                <h6><i>March 2020 - February 2021</i></h6>
+                                                <ul>
+                                                    <li>
+                                                        Maintain & develop modules for BINUS Mobile for Student, Lecturer, and Parent 
+                                                        a Learning Management System for BINUS University, written in Swift.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+            
+                                <article class="education-item">
+                                    <img class="rounded-10" src="assets/ic-ieee.jpg">
+                                    <div class="px-4">
+                                        <h4>IEEE - ICCSAI 2021</h4>
+                                        <h6><i>July 2021 - October 2021</i></h6>
+                                        <hr>
+            
+                                        <ul>
+                                            <li class="item-details">
+                                                <h5>Author</h5>
+                                                <h6><i>July 2021 - October 2021</i></h6>
+                                                <ul>
+                                                    <li>
+                                                        Creating International Publications in ICCSAI 2021 titled 
+                                                        <a class="text-decoration-none" target="_blank" href="https://ieeexplore.ieee.org/document/9609784">
+                                                            "Health Chatbot Using Natural Language Processing for Disease Prediction and Treatment".
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        Winning the Best Presenter for Room 12
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+            
+                                <article class="education-item">
+                                    <img class="rounded-10" src="assets/ic-binus.jpg">
+                                    <div class="px-4">
+                                        <h4>Bina Nusantara</h4>
+                                        <h6><i>July 2019 - July 2020</i></h6>
+                                        <hr>
+            
+                                        <ul>
+                                            <li class="item-details">
+                                                <h5>Education Counselor</h5>
+                                                <h6><i>July 2019 - July 2020</i></h6>
+                                                <ul>
+                                                    <li>
+                                                        Promoting BINUS University to senior high school students in Bogor, Depok, and Cibubur
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </section>
+                
+                            <section class="profile-skills py-5">
+                                <h2 class="fw-bold">Skills ⚙️</h2>
+                                <ul>
+                                    <li>
+                                        <article>
+                                            <h4>Languages</h4>
+                                            <span class="badge rounded-pill bg-primary">C</span>
+                                            <span class="badge rounded-pill bg-secondary">C#</span>
+                                            <span class="badge rounded-pill bg-success">Java</span>
+                                            <span class="badge rounded-pill bg-danger">Kotlin</span>
+                                            <span class="badge rounded-pill bg-light text-dark">Swift</span>
+                                            <span class="badge rounded-pill bg-warning text-dark">HTML</span>
+                                            <span class="badge rounded-pill bg-info text-dark">Javascript</span>
+                                            <span class="badge rounded-pill bg-dark">Typescript</span>
+                
+                                            <div class="skill-language-progress mt-4 d-flex flex-wrap justify-content-between">
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">C</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 80%"></div>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">C#</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 70%"></div>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">Java</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 90%"></div>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">Kotlin</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 70%"></div>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">Swift</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 92%"></div>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">HTML</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 90%"></div>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">Javascript</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 80%"></div>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">Typescript</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+            
+                                    <li>
+                                        <article>
+                                            <h4>Frontend</h4>
+                                            <span class="badge rounded-pill bg-primary">React</span>
+                                            <span class="badge rounded-pill bg-info">React Native</span>
+                                            <span class="badge rounded-pill bg-success">Android</span>
+                                            <span class="badge rounded-pill bg-dark text-light">iOS</span>
+            
+                                            <div class="skill-language-progress mt-4 d-flex flex-wrap justify-content-between">
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">React</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 65%"></div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">React Native</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 75%"></div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">Android</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 70%"></div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">iOS</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 90%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+            
+                                    <li>
+                                        <article>
+                                            <h4>Backend</h4>
+                                            <span class="badge rounded-pill bg-danger">Laravel</span>
+                                            <span class="badge rounded-pill bg-success">ASP.NET MVC</span>
+            
+                                            <div class="skill-language-progress mt-4 d-flex flex-wrap justify-content-between">
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">Laravel</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 85%"></div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">ASP.NET MVC</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 70%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+            
+                                    <li>
+                                        <article>
+                                            <h4>Database</h4>
+                                            <span class="badge rounded-pill bg-dark">Microsoft SQL Server</span>
+                                            <span class="badge rounded-pill bg-cream">MySQL</span>
+            
+                                            <div class="skill-language-progress mt-4 d-flex flex-wrap justify-content-between">
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">Microsoft SQL Server</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 65%"></div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="slp-wrapper">
+                                                    <h5 class="fw-bolder">MySQL</h5>
+                                                    <div class="progress bg-dark rounded-pill">
+                                                        <div class="progress-bar bg-cream" role="progressbar" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>    
+                                </ul>
+                            </section>
+                
+                            <section class="profile-projects py-5">
+                                <h2 class="fw-bold">Projects 💪</h2>
+
+                                <div class="project-list d-flex flex-wrap">
+                                    <article class="d-flex">
+                                        <img class="rounded-10" src="assets/ic-bimob.png">
+                                        <div class="px-4"> 
+                                            <h4 class="fw-bold">Binus Mobile for Student</h4>
+                                            <h6>Binus Mobile for Student is an Learning Management System developed specifically for Students to enhance and support their learning experience in BINUS University</h6>
+                                            <a href="https://apps.apple.com/id/app/binus-mobile-for-student/id1441962329" target="_blank">
+                                                <button class="btn-view"><h6 class="m-0">View</h6></button>
+                                            </a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="d-flex">
+                                        <img class="rounded-10" src="assets/ic-bimobl.png">
+                                        <div class="px-4"> 
+                                            <h4 class="fw-bold">Binus Mobile for Lecturer</h4>
+                                            <h6>Binus Mobile for Lecturer is an Learning Management System developed specifically for Lecturers to enhance and support their teaching experience in BINUS University</h6>
+                                            <a href="https://apps.apple.com/id/app/binus-mobile-for-lecturer/id1442060377?l=id" target="_blank">
+                                                <button class="btn-view"><h6 class="m-0">View</h6></button>
+                                            </a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="d-flex">
+                                        <img class="rounded-10" src="assets/ic-bimobp.png">
+                                        <div class="px-4"> 
+                                            <h4 class="fw-bold">Binus Mobile for Parent</h4>
+                                            <h6>Binus Mobile for Parent is an application that's develoepd for Parent, so they are able to access relevant information for their child's activity in BINUS University.</h6>
+                                            <a href="https://apps.apple.com/id/app/binus-mobile-for-parent/id1524738118" target="_blank">
+                                                <button class="btn-view"><h6 class="m-0">View</h6></button>
+                                            </a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="d-flex">
+                                        <img class="rounded-10" src="assets/ic-bimay.png">
+                                        <div class="px-4"> 
+                                            <h4 class="fw-bold">BINUSMAYA</h4>
+                                            <h6>BINUSMAYA is the newest Learning Management System developed for Students and Lecturers to enhance and support their activity in BINUS University</h6>
+                                            <a href="https://apps.apple.com/id/app/binusmaya/id1499309793?l=id" target="_blank">
+                                                <button class="btn-view"><h6 class="m-0">View</h6></button>
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </section>
+                
+                            <section class="profile-cna py-5">
+                                <h2 class="fw-bold">Certificates & Achievements 🏆</h2>
+                                <div class="d-flex flex-wrap">
+                                    <img src="/assets/Certificates/bp-12.png">
+                                    <img src="/assets/Certificates/iccsai.png">
+                                    <img src="/assets/Certificates/ios-expert.png">
+                                    <img src="/assets/Certificates/ios-bfaa.png">
+                                    <img src="/assets/Certificates/ios-p.png">
+                                    <img src="/assets/Certificates/andro-bfaa.png">
+                                    <img src="/assets/Certificates/andro-p.png">
+                                    <img src="/assets/Certificates/rn-binus.png">
+                                    <img src="/assets/Certificates/itdiv-am.png">
+                                    <img src="/assets/Certificates/web-trainner.png">
+                                    <img src="/assets/Certificates/pf-score.png">
+                                </div>
+                            </section>
+                        </div>
                     </div>
                 </section>
             </section>
+
+            <div id="profile-detail">
+                <section class="profile-education p-5">
+                    <h2 class="fw-bold">Education 🎓</h2>
+                    <article class="education-item">
+                        <img class="rounded-10" src="assets/ic-binus.jpg">
+                        <div class="px-4">
+                            <h4>Bina Nusantara</h4>
+                            <h6><i>September 2019 - 2023 (Expected)</i></h6>
+                            <hr>
+
+                            <ul>
+                                <li class="item-details">
+                                    <h5>Student - Bachelor's Degree</h5>
+                                    Majoring in Computer Science, Minoring in Software Engineering.<br>
+                                    Currently in the 6th Semester with 3.95 GPA
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="education-item">
+                        <img class="rounded-10" src="assets/ic-styakobus.jpg">
+                        <div class="px-4">
+                            <h4>Santo Yakobus</h4>
+                            <h6><i>2010 - 2019</i></h6>
+                            <hr>
+
+                            <ul>
+                                <li class="item-details">
+                                    <h5>Student - Senior High School</h5>
+                                    Majoring in Science, Graduated with total national exam score of (374.5 / 400)
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li class="item-details">
+                                    <h5>Student - Junior High School</h5>
+                                    Graduated with total national exam score of (370 / 400)
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li class="item-details">
+                                    <h5>Student - Elementary School</h5>
+                                    Graduated with total national exam score of (279 / 300)
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="education-item">
+                        <img class="rounded-10" src="assets/ic-pk.png">
+                        <div class="px-4">
+                            <h4>Santo Yakobus</h4>
+                            <h6><i>2007 - 2010</i></h6>
+                            <hr>
+
+                            <ul>
+                                <li class="item-details">
+                                    <h5>Student - Elementary School</h5>
+                                    Studying until the 3th grade, then transferred into Santo Yakobus Elementary School.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+    
+                <section class="profile-experience p-5">
+                    <h2 class="fw-bold">Experience 💼</h2>
+                    <article class="education-item">
+                        <img class="rounded-10" src="assets/ic-itdiv.jpg">
+                        <div class="px-4">
+                            <h4>Bina Nusantara - IT Division</h4>
+                            <h6><i>March 2020 - Present</i></h6>
+                            <hr>
+
+                            <ul>
+                                <li class="item-details">
+                                    <h5>Junior Programmer</h5>
+                                    <h6><i>March 2021 - Present</i></h6>
+                                    <ul>
+                                        <li>
+                                            Maintain & develop modules for BINUSMAYA. 
+                                            a new Learning Management System for BINUS University, built using React Native.
+                                        </li>
+                                        <li>
+                                            Maintain & develop API for BINUS Mobile for Student, Lecturer, and Parent. 
+                                            Written in C#, using ASP.NET MVC
+                                        </li>
+                                        <li>
+                                            Maintain & develop modules for BINUS Mobile for Student, Lecturer, and Parent 
+                                            a Learning Management System for BINUS University, written in Swift.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item-details">
+                                    <h5>Associate Member</h5>
+                                    <h6><i>March 2020 - February 2021</i></h6>
+                                    <ul>
+                                        <li>
+                                            Maintain & develop modules for BINUS Mobile for Student, Lecturer, and Parent 
+                                            a Learning Management System for BINUS University, written in Swift.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="education-item">
+                        <img class="rounded-10" src="assets/ic-ieee.jpg">
+                        <div class="px-4">
+                            <h4>IEEE - ICCSAI 2021</h4>
+                            <h6><i>July 2021 - October 2021</i></h6>
+                            <hr>
+
+                            <ul>
+                                <li class="item-details">
+                                    <h5>Author</h5>
+                                    <h6><i>July 2021 - October 2021</i></h6>
+                                    <ul>
+                                        <li>
+                                            Creating International Publications in ICCSAI 2021 titled 
+                                            <a class="text-decoration-none" target="_blank" href="https://ieeexplore.ieee.org/document/9609784">
+                                                "Health Chatbot Using Natural Language Processing for Disease Prediction and Treatment".
+                                            </a>
+                                        </li>
+                                        <li>
+                                            Winning the Best Presenter for Room 12
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="education-item">
+                        <img class="rounded-10" src="assets/ic-binus.jpg">
+                        <div class="px-4">
+                            <h4>Bina Nusantara</h4>
+                            <h6><i>July 2019 - July 2020</i></h6>
+                            <hr>
+
+                            <ul>
+                                <li class="item-details">
+                                    <h5>Education Counselor</h5>
+                                    <h6><i>July 2019 - July 2020</i></h6>
+                                    <ul>
+                                        <li>
+                                            Promoting BINUS University to senior high school students in Bogor, Depok, and Cibubur
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+    
+                <section class="profile-skills p-5">
+                    <h2 class="fw-bold">Skills ⚙️</h2>
+                    <ul>
+                        <li>
+                            <article>
+                                <h4>Languages</h4>
+                                <span class="badge rounded-pill bg-primary">C</span>
+                                <span class="badge rounded-pill bg-secondary">C#</span>
+                                <span class="badge rounded-pill bg-success">Java</span>
+                                <span class="badge rounded-pill bg-danger">Kotlin</span>
+                                <span class="badge rounded-pill bg-light text-dark">Swift</span>
+                                <span class="badge rounded-pill bg-warning text-dark">HTML</span>
+                                <span class="badge rounded-pill bg-info text-dark">Javascript</span>
+                                <span class="badge rounded-pill bg-dark">Typescript</span>
+    
+                                <div class="skill-language-progress mt-4 d-flex flex-wrap justify-content-between">
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">C</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">C#</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">Java</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">Kotlin</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">Swift</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 92%"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">HTML</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">Javascript</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">Typescript</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article>
+                                <h4>Frontend</h4>
+                                <span class="badge rounded-pill bg-primary">React</span>
+                                <span class="badge rounded-pill bg-info">React Native</span>
+                                <span class="badge rounded-pill bg-success">Android</span>
+                                <span class="badge rounded-pill bg-dark text-light">iOS</span>
+
+                                <div class="skill-language-progress mt-4 d-flex flex-wrap justify-content-between">
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">React</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">React Native</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">Android</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">iOS</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article>
+                                <h4>Backend</h4>
+                                <span class="badge rounded-pill bg-danger">Laravel</span>
+                                <span class="badge rounded-pill bg-success">ASP.NET MVC</span>
+
+                                <div class="skill-language-progress mt-4 d-flex flex-wrap justify-content-between">
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">Laravel</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">ASP.NET MVC</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article>
+                                <h4>Database</h4>
+                                <span class="badge rounded-pill bg-dark">Microsoft SQL Server</span>
+                                <span class="badge rounded-pill bg-cream">MySQL</span>
+
+                                <div class="skill-language-progress mt-4 d-flex flex-wrap justify-content-between">
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">Microsoft SQL Server</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slp-wrapper">
+                                        <h5 class="fw-bolder">MySQL</h5>
+                                        <div class="progress bg-dark rounded-pill">
+                                            <div class="progress-bar bg-cream" role="progressbar" style="width: 60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>    
+                    </ul>
+                </section>
+    
+                <section class="profile-projects p-5">
+                    <h2 class="fw-bold">Projects 💪</h2>
+
+                    <div class="project-list d-flex flex-wrap justify-content-between">
+                        <article class="d-flex">
+                            <img class="rounded-10" src="assets/ic-bimob.png">
+                            <div class="px-4"> 
+                                <h4 class="fw-bold">Binus Mobile for Student</h4>
+                                <h6>Binus Mobile for Student is an Learning Management System developed specifically for Students to enhance and support their learning experience in BINUS University</h6>
+                                <a href="https://apps.apple.com/id/app/binus-mobile-for-student/id1441962329" target="_blank">
+                                    <button class="btn-view"><h6 class="m-0">View</h6></button>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="d-flex">
+                            <img class="rounded-10" src="assets/ic-bimobl.png">
+                            <div class="px-4"> 
+                                <h4 class="fw-bold">Binus Mobile for Lecturer</h4>
+                                <h6>Binus Mobile for Lecturer is an Learning Management System developed specifically for Lecturers to enhance and support their teaching experience in BINUS University</h6>
+                                <a href="https://apps.apple.com/id/app/binus-mobile-for-lecturer/id1442060377?l=id" target="_blank">
+                                    <button class="btn-view"><h6 class="m-0">View</h6></button>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="d-flex">
+                            <img class="rounded-10" src="assets/ic-bimobp.png">
+                            <div class="px-4"> 
+                                <h4 class="fw-bold">Binus Mobile for Parent</h4>
+                                <h6>Binus Mobile for Parent is an application that's develoepd for Parent, so they are able to access relevant information for their child's activity in BINUS University.</h6>
+                                <a href="https://apps.apple.com/id/app/binus-mobile-for-parent/id1524738118" target="_blank">
+                                    <button class="btn-view"><h6 class="m-0">View</h6></button>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="d-flex">
+                            <img class="rounded-10" src="assets/ic-bimay.png">
+                            <div class="px-4"> 
+                                <h4 class="fw-bold">BINUSMAYA</h4>
+                                <h6>BINUSMAYA is the newest Learning Management System developed for Students and Lecturers to enhance and support their activity in BINUS University</h6>
+                                <a href="https://apps.apple.com/id/app/binusmaya/id1499309793?l=id" target="_blank">
+                                    <button class="btn-view"><h6 class="m-0">View</h6></button>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+    
+                <section class="profile-cna p-5">
+                    <h2 class="fw-bold">Certificates & Achievements 🏆</h2>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <img src="/assets//Certificates/bp-12.png">
+                        <img src="/assets//Certificates/iccsai.png">
+                        <img src="/assets//Certificates/ios-expert.png">
+                        <img src="/assets//Certificates/ios-bfaa.png">
+                        <img src="/assets//Certificates/ios-p.png">
+                        <img src="/assets//Certificates/andro-bfaa.png">
+                        <img src="/assets//Certificates/andro-p.png">
+                        <img src="/assets//Certificates/rn-binus.png">
+                        <img src="/assets//Certificates/itdiv-am.png">
+                        <img src="/assets//Certificates/web-trainner.png">
+                        <img src="/assets//Certificates/pf-score.png">
+                    </div>
+                </section>
+            </div>
+            </div>
         </main>
     </body>
 </html>

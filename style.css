@@ -170,6 +170,33 @@ html, body, main {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
+.project-list article {
+    width: 48%;
+    padding: 16px 0;
+    min-width: 330px;
+}
+
+.project-list article img {
+    width: 150px;
+    height: 150px;
+}
+
+.btn-view {
+    width: 100%;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px 0px;
+    transition: all .2s ease-in-out;
+    margin-top: 16px;
+}
+
+.btn-view:hover {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+
 /* Colors */
 .bg-cream {
     background-color: var(--cream) !important;
@@ -206,6 +233,14 @@ html, body, main {
 
     .profile-insight-detail-right {
         padding: 24px;
+    }
+
+    .slp-wrapper {
+        width: 100%;
+    }
+
+    .project-list article {
+        width: 100%;
     }
 }
 

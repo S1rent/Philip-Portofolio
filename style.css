@@ -12,7 +12,7 @@ html, body, main {
     margin: 0;
     font-family: 'Poppins', sans-serif !important;
     transition: 2s ease-in 1s;
-    min-width: 450px !important;
+    min-width: 400px !important;
 }
 
 .profile-insight {
@@ -159,7 +159,34 @@ html, body, main {
 
 @media only screen and (max-width: 800px) {
     .profile-insight-detail-left {
-        margin-left: 64px;
+        margin-left: 16px;
         width: 300px;
+        min-width: 400px;
+    }
+
+    .profile-insight-detail-left article {
+        padding: 32px;
+    }
+
+    .profile-insight-detail-right {
+        padding: 24px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .profile-insight-detail-left {
+        min-width: 300px;
+    }
+
+    .profile-insight-detail-left h4 {
+        font-size: 28px;
+        padding-bottom: 16px !important;
+        padding-top: 16px !important
+    }
+
+    .profile-insight-detail-left article img {
+        width: 150px;
+        height: 150px;
     }
 }

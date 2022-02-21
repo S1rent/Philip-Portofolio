@@ -41,7 +41,6 @@ html, body, main {
     width: 248px;
     height: 248px;
     object-fit: cover;
-    border-radius: 50%;
     margin: 0 auto;
 }
 
@@ -134,6 +133,29 @@ html, body, main {
     border-radius: 10% !important;
 }
 
+.profile-cna img {
+    width: 45%;
+    padding: 16px 2.5%;
+    min-width: 330px;
+}
+
+.profile-cna img {
+    transition: all .15s ease-in-out;
+}
+
+.profile-cna img:hover {
+    transform: scale(1.1);
+}
+
+.profile-skills article {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.profile-skills article h4 {
+    font-weight: 600;
+}
+
 /* Colors */
 .bg-cream {
     background-color: var(--cream);
@@ -172,7 +194,6 @@ html, body, main {
         padding: 24px;
     }
 }
-
 
 @media only screen and (max-width: 480px) {
     .profile-insight-detail-left {

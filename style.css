@@ -78,7 +78,6 @@ html, body, main {
 }
 
 .profile-insight-detail-right h6 {
-    font-size: 36px;
     font-weight: normal;
     padding: 0;
     margin: 0;
@@ -132,7 +131,7 @@ html, body, main {
 }
 
 .rounded-10 {
-    border-radius: 10%;
+    border-radius: 10% !important;
 }
 
 /* Colors */

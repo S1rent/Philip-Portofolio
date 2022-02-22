@@ -197,6 +197,26 @@ html, body, main {
     color: white;
 }
 
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+    box-shadow: none !important; 
+    color: black !important;
+}
+
+.accordion-item {
+    border: none !important;
+}
+
+.accordion-button {
+    border: none !important;
+    padding: 1rem 0rem !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    border-color: rgba(0,0,0,.125) !important;
+}
+
 /* Colors */
 .bg-cream {
     background-color: var(--cream) !important;
@@ -267,6 +287,10 @@ html, body, main {
 
     .education-item div {
         text-align: left;
+    }
+
+    .education-item h4 {
+        margin-top: 16px;
     }
 
     .project-list article {

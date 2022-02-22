@@ -268,7 +268,7 @@ html, body, main {
 
 .custom-navigation.active, .custom-navigation-web.active {
     display: inline-block;
-    border-bottom: 2px solid var(--cream);
+    border-bottom: 3px solid var(--cream);
 }
 
 .navbar-light .navbar-toggler {
@@ -289,7 +289,7 @@ html, body, main {
 
 .custom-navigation-web:hover {
     display: inline-block;
-    border-bottom: 2px solid var(--cream);
+    border-bottom: 3px solid var(--cream);
 }
 
 /* Colors */

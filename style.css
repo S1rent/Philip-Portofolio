@@ -13,6 +13,7 @@ html, body, main {
     font-family: 'Poppins', sans-serif !important;
     transition: 2s ease-in 1s;
     min-width: 400px !important;
+    scroll-behavior: smooth;
 }
 
 .profile-insight {
@@ -215,6 +216,36 @@ html, body, main {
 .accordion-button:focus {
     box-shadow: none !important;
     border-color: rgba(0,0,0,.125) !important;
+}
+
+#btn-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#btn-top:hover {
+    background-color: black;
+}
+
+#icn-arrow-top {
+    filter: invert(0%) sepia(5%) saturate(7482%) hue-rotate(261deg) brightness(98%) contrast(106%);
+    transition: all .15s ease-in-out;
+    width: 50%;
+}
+
+#icn-arrow-top:hover {
+    filter: invert(97%) sepia(100%) saturate(12%) hue-rotate(211deg) brightness(102%) contrast(104%);
 }
 
 /* Colors */

@@ -232,6 +232,7 @@ html, body, main {
     display: flex;
     align-content: center;
     justify-content: center;
+    z-index: 1000;
 }
 
 #btn-top:hover {

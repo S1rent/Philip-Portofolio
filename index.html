@@ -13,7 +13,58 @@
   </head>
   <body>
     <main>
-      <section class="profile-insight" style="height: 1080px; width: 100%">
+      <header>
+        <nav class="navbar navbar-light bg-light fixed-top bg-white shadow-sm">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><h3 class="fw-bold">Philip Indra Prayitno</h3></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h3 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Navigation</h3>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <div id="nav-prof" class="custom-navigation">
+                            <h6 class="nav-link">Profile</h6>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div id="nav-edu" class="custom-navigation">
+                            <h6 class="nav-link">Education</h6>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div id="nav-exp" class="custom-navigation">
+                            <h6 class="nav-link">Experience</h6>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div id="nav-skill" class="custom-navigation">
+                            <h6 class="nav-link">Skills</h6>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div id="nav-proj" class="custom-navigation">
+                            <h6 class="nav-link">Projects</h6>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div id="nav-cna" class="custom-navigation">
+                            <h6 class="nav-link">Certificates & Achievements</h6>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+      <section id="profnav" class="profile-insight" style="height: 1080px; width: 100%">
         <div class="bg-cream insight-left"></div>
         <div class="bg-white insight-right"></div>
         <section class="profile-insight-detail d-flex align-items-center flex-wrap">
@@ -45,7 +96,7 @@
               <br> I'm also working at Bina Nusantara IT Division as Mobile Programmer (Swift & React Native). Please do not hesitate to contact me through my social media ✌️
             </p>
             <div id="profile-sm-detail" style="display: none">
-                <div class="accordion-item pt-5">
+                <div id="edunav-mobile" class="accordion-item pt-5">
                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                         <h2 class="fw-bold">Education 🎓</h2>
@@ -114,7 +165,7 @@
                     </div>
                 </div>
 
-                <div class="accordion-item pt-5">
+                <div id="expnav-mobile" class="accordion-item pt-5">
                     <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                         <h2 class="fw-bold">Experience 💼</h2>
@@ -204,7 +255,7 @@
                     </div>
                 </div>
 
-                <div class="accordion-item pt-5">
+                <div id="skillnav-mobile" class="accordion-item pt-5">
                     <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                         <h2 class="fw-bold">Skills ⚙️</h2>
@@ -360,7 +411,7 @@
                     </div>
                 </div>
               
-                <div class="accordion-item pt-5">
+                <div id="projnav-mobile" class="accordion-item pt-5">
                     <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                         <h2 class="fw-bold">Projects 💪</h2>
@@ -424,7 +475,7 @@
                     </div>
                 </div>
               
-                <div class="accordion-item pt-5">
+                <div id="cnanav-mobile" class="accordion-item pt-5">
                     <h2 class="accordion-header" id="panelsStayOpen-headingFive">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                           <h2 class="fw-bold">Certificates & Achievements 🏆</h2>
@@ -455,7 +506,7 @@
         </section>
       </section>
       <div id="profile-detail">
-        <div class="accordion-item pt-5 px-5">
+        <div id="edunav" class="accordion-item pt-5 px-5">
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
               <h2 class="fw-bold">Education 🎓</h2>
@@ -523,7 +574,7 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item pt-5 px-5">
+        <div id="expnav" class="accordion-item pt-5 px-5">
           <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
               <h2 class="fw-bold">Experience 💼</h2>
@@ -612,7 +663,7 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item pt-5 px-5">
+        <div id="skillnav" class="accordion-item pt-5 px-5">
           <h2 class="accordion-header" id="panelsStayOpen-headingThree">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
               <h2 class="fw-bold">Skills ⚙️</h2>
@@ -767,7 +818,7 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item pt-5 px-5">
+        <div id="projnav" class="accordion-item pt-5 px-5">
           <h2 class="accordion-header" id="panelsStayOpen-headingFour">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
               <h2 class="fw-bold">Projects 💪</h2>
@@ -830,7 +881,7 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item pt-5 px-5">
+        <div id="cnanav" class="accordion-item pt-5 px-5">
           <h2 class="accordion-header" id="panelsStayOpen-headingFive">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                 <h2 class="fw-bold">Certificates & Achievements 🏆</h2>

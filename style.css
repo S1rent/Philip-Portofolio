@@ -249,6 +249,24 @@ html, body, main {
     filter: invert(97%) sepia(100%) saturate(12%) hue-rotate(211deg) brightness(102%) contrast(104%);
 }
 
+.nav-link {
+    cursor: pointer !important;
+}
+
+.custom-navigation {
+    margin-bottom: 16px;
+}
+
+.custom-navigation h6 {
+    padding-bottom: 0;
+    color: black !important;
+}
+
+.custom-navigation.active {
+    display: inline-block;
+    border-bottom: 2px solid var(--cream);
+}
+
 /* Colors */
 .bg-cream {
     background-color: var(--cream) !important;
@@ -286,11 +304,15 @@ html, body, main {
     .profile-insight-detail-right {
         padding: 24px;
     }
+}
 
+@media only screen and (max-width: 844px) {
     .slp-wrapper {
         width: 100%;
     }
+}
 
+@media only screen and (max-width: 812px) {
     .project-list article {
         width: 100%;
     }

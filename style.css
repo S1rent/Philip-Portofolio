@@ -40,7 +40,7 @@ html, body, main {
 .profile-insight-detail img {
     width: 248px;
     height: 248px;
-    object-fit: cover;
+    object-fit: fill;
     margin: 0 auto;
 }
 
@@ -258,5 +258,24 @@ html, body, main {
     .profile-insight-detail-left article img {
         width: 150px;
         height: 150px;
+    }
+
+    .education-item {
+        display: block;
+        text-align: center;
+    }
+
+    .education-item div {
+        text-align: left;
+    }
+
+    .project-list article {
+        display: block !important;
+        text-align: center;
+    }
+
+    .project-list article div {
+        margin-top: 16px;
+        text-align: left;
     }
 }

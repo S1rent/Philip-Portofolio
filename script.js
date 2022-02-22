@@ -105,6 +105,12 @@ function checkResolution() {
 }
 
 function resetActiveLinks() {
+
+    setTimeout(function () {
+        $('#offcanvasNavbar').offcanvas('hide')
+                  
+      }, 500);
+
     document.getElementById('nav-prof-mobile').classList.remove("active")
     document.getElementById('nav-edu-mobile').classList.remove("active")
     document.getElementById('nav-exp-mobile').classList.remove("active")

@@ -12,7 +12,7 @@ html, body, main {
     margin: 0;
     font-family: 'Poppins', sans-serif !important;
     transition: 2s ease-in 1s;
-    min-width: 400px !important;
+    min-width: 350px !important;
     scroll-behavior: smooth;
 }
 
@@ -47,7 +47,7 @@ html, body, main {
 
 .profile-insight-detail-left {
     margin-left: 128px;
-    min-width: 430px;
+    min-width: 350px;
     background-color: var(--lightcream);
     align-items: center;
     justify-content: center;
@@ -319,7 +319,7 @@ html, body, main {
     .profile-insight-detail-left {
         margin-left: 16px;
         width: 300px;
-        min-width: 400px;
+        min-width: 350px;
     }
 
     .profile-insight-detail-left article {

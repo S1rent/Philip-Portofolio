@@ -267,6 +267,17 @@ html, body, main {
     border-bottom: 2px solid var(--cream);
 }
 
+.navbar-light .navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 /* Colors */
 .bg-cream {
     background-color: var(--cream) !important;

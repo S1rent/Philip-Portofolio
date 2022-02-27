@@ -313,6 +313,10 @@ html, body, main {
     .profile-insight-detail-right {
         width: 100%;
     }
+
+    #panelsStayOpen-collapseThree .accordion-body {
+        padding: 0 !important;
+    }
 }
 
 @media only screen and (max-width: 800px) {

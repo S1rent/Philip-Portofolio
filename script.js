@@ -50,6 +50,30 @@ function setupNavigation() {
     $("#nav-cna-mobile").click(function() {
         navigateToCertificatesAndAchievements()
     })
+
+    $("#nav-prof").click(function() {
+        navigateToProfile()
+    })
+    
+    $("#nav-edu").click(function() {
+        navigateToEducations()
+    })
+
+    $("#nav-exp").click(function() {
+        navigateToExperiences()
+    })
+
+    $("#nav-skill").click(function() {
+        navigateToSkills()
+    })
+
+    $("#nav-proj").click(function() {
+        navigateToProjects()
+    })
+
+    $("#nav-cna").click(function() {
+        navigateToCertificatesAndAchievements()
+    })
 }
 
 function setupStylingFromResolution() {

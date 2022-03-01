@@ -407,6 +407,11 @@ html, body, main {
     .project-list article {
         width: 100%;
     }
+
+    .profile-cna img {
+        width: 100% !important;
+        height: 400px;
+    }
 }
 
 @media only screen and (max-width: 595px) {
@@ -414,11 +419,19 @@ html, body, main {
         display: block !important;
         margin-top: 16px;
     }
+
+    .profile-cna img {
+        height: 350px;
+    }
 }
 
 @media only screen and (max-width: 542px) {
     .profile-insight-detail-left {
         min-width: 300px;
+    }
+
+    .profile-cna img {
+        height: 325px;
     }
 }
 
@@ -455,5 +468,9 @@ html, body, main {
     .project-list article div {
         margin-top: 16px;
         text-align: left;
+    }
+
+    .profile-cna img {
+        height: 250px;
     }
 }

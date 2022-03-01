@@ -1,3 +1,5 @@
+import * as Data from './data.js'
+
 $(document).ready(function() {
     let buttonTop = document.getElementById("btn-top")
     buttonTop.style.display = "none"
@@ -8,92 +10,149 @@ $(document).ready(function() {
     setupStylingFromResolution()
     setupButtonScrollToTop(buttonTop)
     
+    loadEducationData()
+    loadExperienceData()
+    loadSkillsData()
     loadProjectsData()
     loadCertificatesData()
 })
 
+function loadEducationData() {
+    Data.educationData.forEach(educationData => {
+        Data.educationTargetSection.forEach(targetSection => {
+            let items = ""
+            educationData.details.forEach(item => {
+                items +=
+                `
+                    <li class="item-details">
+                        <h5>${ item.detailTitle }</h5> ${ item.description }
+                    </li>
+                `
+            });
+            document.getElementById(targetSection).innerHTML += 
+            `
+                <article class="education-item">
+                    <img class="rounded-10" src="${ educationData.educationIcon }">
+                    <div class="px-4">
+                        <h4>${ educationData.title }</h4>
+                        <h6>
+                            <i>${ educationData.timeline }</i>
+                        </h6>
+                        <hr>
+                        <ul>
+                            ${ items }
+                        </ul>
+                    </div>
+                </article>
+            `
+        });
+    });
+}
+
+function loadExperienceData() {
+    Data.experienceData.forEach(experienceData => {
+        Data.experienceTargetSection.forEach(targetSection => {
+            let items = ""
+            experienceData.details.forEach(item => {
+                let jobDeskItems = ""
+                item.jobDesks.forEach(jobDesk => {
+                    jobDeskItems += 
+                    `
+                        <li>${ jobDesk }</li>
+                    `
+                });
+                items +=
+                `
+                    <li class="item-details">
+                        <h5>${ item.detailTitle }</h5>
+                        <h6>
+                            <i>${ item.detailTimeline }</i>
+                        </h6>
+                        <ul>
+                            ${ jobDeskItems }
+                        </ul>
+                    </li>
+                `
+            });
+            document.getElementById(targetSection).innerHTML += 
+            `
+                <article class="education-item">
+                    <img class="rounded-10" src="${ experienceData.experienceIcon }">
+                    <div class="px-4">
+                        <h4>${ experienceData.title }</h4>
+                        <h6>
+                            <i>${ experienceData.timeline }</i>
+                        </h6>
+                        <hr>
+                        <ul>
+                            ${ items }
+                        </ul>
+                    </div>
+                </article>
+            `
+        });
+    });
+}
+
+function loadSkillsData() {
+    Data.skillData.forEach(skillData => {
+        let items = ""
+
+        skillData.items.forEach(item => {
+            items += 
+            `
+                <div class="slp-wrapper">
+                    <h5 class="fw-bolder">${ item.skillName }</h5>
+                    <div class="progress bg-dark rounded-pill">
+                        <div class="progress-bar bg-cream" role="progressbar" style="width: ${ item.progress }%"></div>
+                    </div>
+                </div>
+            `
+        });
+
+        Data.skillTargetSection.forEach(section => {
+            document.getElementById(section).innerHTML += 
+            `
+                <li>
+                    <article>
+                        <h4>${ skillData.title }</h4>
+                        <div class="skill-language-progress mt-4 d-flex flex-wrap justify-content-between">
+                            ${ items }
+                        </div>
+                    </article>
+                </li>
+            `
+            });
+    });
+}
+
 function loadProjectsData() {
-    const data = [
-        {
-            projectIcon: "assets/ic-bimob.png",
-            projectTitle: "Binus Mobile for Student",
-            projectDescription: "Binus Mobile for Student is an Learning Management System developed specifically for Students to enhance and support their learning experience in BINUS University",
-            projectLink: "https://apps.apple.com/id/app/binus-mobile-for-student/id1441962329"
-        },
-        {
-            projectIcon: "assets/ic-bimobl.png",
-            projectTitle: "Binus Mobile for Lecturer",
-            projectDescription: "Binus Mobile for Lecturer is an Learning Management System developed specifically for Lecturers to enhance and support their teaching experience in BINUS University",
-            projectLink: "https://apps.apple.com/id/app/binus-mobile-for-lecturer/id1442060377?l=id"
-        },
-        {
-            projectIcon: "assets/ic-bimobp.png",
-            projectTitle: "Binus Mobile for Parent",
-            projectDescription: "Binus Mobile for Parent is an application that's developed for Parent, so they are able to access relevant information for their child's activity in BINUS University.",
-            projectLink: "https://apps.apple.com/id/app/binus-mobile-for-parent/id1524738118"
-        },
-        {
-            projectIcon: "assets/ic-bimay.png",
-            projectTitle: "BINUSMAYA",
-            projectDescription: "BINUSMAYA is the newest Learning Management System developed for Students and Lecturers to enhance and support their activity in BINUS University",
-            projectLink: "https://apps.apple.com/id/app/binusmaya/id1499309793?l=id"
-        },
-    ]
-
-    data.forEach(projectData => {
-        document.getElementById("profile-projects-list-web").innerHTML += 
-        `
-            <article class="d-flex">
-                <img class="rounded-10" src="${ projectData.projectIcon }">
-                <div class="px-4">
-                    <h4 class="fw-bold">${ projectData.projectTitle }</h4>
-                    <h6>${ projectData.projectDescription }</h6>
-                    <a href="${ projectData.projectLink }" target="_blank">
-                        <button class="btn-view">
-                            <h6 class="m-0">View</h6>
-                        </button>
-                    </a>
-                </div>
-            </article>
-        `
-
-        document.getElementById("profile-projects-list-mobile").innerHTML += 
-        `
-            <article class="d-flex">
-                <img class="rounded-10" src="${ projectData.projectIcon }">
-                <div class="px-4">
-                    <h4 class="fw-bold">${ projectData.projectTitle }</h4>
-                    <h6>${ projectData.projectDescription }</h6>
-                    <a href="${ projectData.projectLink }" target="_blank">
-                        <button class="btn-view">
-                            <h6 class="m-0">View</h6>
-                        </button>
-                    </a>
-                </div>
-            </article>
-        `
+    Data.projectData.forEach(projectData => {
+        Data.projectTargetSection.forEach(section => {
+            document.getElementById(section).innerHTML += 
+            `
+                <article class="d-flex">
+                    <img class="rounded-10" src="${ projectData.projectIcon }">
+                    <div class="px-4">
+                        <h4 class="fw-bold">${ projectData.projectTitle }</h4>
+                        <h6>${ projectData.projectDescription }</h6>
+                        <a href="${ projectData.projectLink }" target="_blank">
+                            <button class="btn-view">
+                                <h6 class="m-0">View</h6>
+                            </button>
+                        </a>
+                    </div>
+                </article>
+            `
+        });
      });
 }
 
 function loadCertificatesData() {
-    const data = [
-        "/assets/Certificates/bp-12.png",
-        "/assets/Certificates/iccsai.png",
-        "/assets/Certificates/ios-expert.png",
-        "/assets/Certificates/ios-bfaa.png",
-        "/assets/Certificates/ios-p.png",
-        "/assets/Certificates/andro-bfaa.png",
-        "/assets/Certificates/andro-p.png",
-        "/assets/Certificates/rn-binus.png",
-        "/assets/Certificates/itdiv-am.png",
-        "/assets/Certificates/web-trainner.png",
-        "/assets/Certificates/mobile-trainner.png",
-        "/assets/Certificates/pf-score.png",
-    ]
-
-    data.forEach(certificateData => {
-       document.getElementById("profile-cna-list-web").innerHTML += `<img src="${certificateData}">`
-       document.getElementById("profile-cna-list-mobile").innerHTML += `<img src="${certificateData}">`
+    Data.certificateData.forEach(certificateData => {
+        Data.certificateTargetSection.forEach(section => {
+            document.getElementById(section).innerHTML += `<img src="${certificateData}">`
+        });
     });
 }
 

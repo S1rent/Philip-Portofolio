@@ -7,22 +7,108 @@ $(document).ready(function() {
     scrollHandler(buttonTop)
     setupStylingFromResolution()
     setupButtonScrollToTop(buttonTop)
+    
+    loadProjectsData()
+    loadCertificatesData()
 })
 
+function loadProjectsData() {
+    const data = [
+        {
+            projectIcon: "assets/ic-bimob.png",
+            projectTitle: "Binus Mobile for Student",
+            projectDescription: "Binus Mobile for Student is an Learning Management System developed specifically for Students to enhance and support their learning experience in BINUS University",
+            projectLink: "https://apps.apple.com/id/app/binus-mobile-for-student/id1441962329"
+        },
+        {
+            projectIcon: "assets/ic-bimobl.png",
+            projectTitle: "Binus Mobile for Lecturer",
+            projectDescription: "Binus Mobile for Lecturer is an Learning Management System developed specifically for Lecturers to enhance and support their teaching experience in BINUS University",
+            projectLink: "https://apps.apple.com/id/app/binus-mobile-for-lecturer/id1442060377?l=id"
+        },
+        {
+            projectIcon: "assets/ic-bimobp.png",
+            projectTitle: "Binus Mobile for Parent",
+            projectDescription: "Binus Mobile for Parent is an application that's developed for Parent, so they are able to access relevant information for their child's activity in BINUS University.",
+            projectLink: "https://apps.apple.com/id/app/binus-mobile-for-parent/id1524738118"
+        },
+        {
+            projectIcon: "assets/ic-bimay.png",
+            projectTitle: "BINUSMAYA",
+            projectDescription: "BINUSMAYA is the newest Learning Management System developed for Students and Lecturers to enhance and support their activity in BINUS University",
+            projectLink: "https://apps.apple.com/id/app/binusmaya/id1499309793?l=id"
+        },
+    ]
+
+    data.forEach(projectData => {
+        document.getElementById("profile-projects-list-web").innerHTML += 
+        `
+            <article class="d-flex">
+                <img class="rounded-10" src="${ projectData.projectIcon }">
+                <div class="px-4">
+                    <h4 class="fw-bold">${ projectData.projectTitle }</h4>
+                    <h6>${ projectData.projectDescription }</h6>
+                    <a href="${ projectData.projectLink }" target="_blank">
+                        <button class="btn-view">
+                            <h6 class="m-0">View</h6>
+                        </button>
+                    </a>
+                </div>
+            </article>
+        `
+
+        document.getElementById("profile-projects-list-mobile").innerHTML += 
+        `
+            <article class="d-flex">
+                <img class="rounded-10" src="${ projectData.projectIcon }">
+                <div class="px-4">
+                    <h4 class="fw-bold">${ projectData.projectTitle }</h4>
+                    <h6>${ projectData.projectDescription }</h6>
+                    <a href="${ projectData.projectLink }" target="_blank">
+                        <button class="btn-view">
+                            <h6 class="m-0">View</h6>
+                        </button>
+                    </a>
+                </div>
+            </article>
+        `
+     });
+}
+
+function loadCertificatesData() {
+    const data = [
+        "/assets/Certificates/bp-12.png",
+        "/assets/Certificates/iccsai.png",
+        "/assets/Certificates/ios-expert.png",
+        "/assets/Certificates/ios-bfaa.png",
+        "/assets/Certificates/ios-p.png",
+        "/assets/Certificates/andro-bfaa.png",
+        "/assets/Certificates/andro-p.png",
+        "/assets/Certificates/rn-binus.png",
+        "/assets/Certificates/itdiv-am.png",
+        "/assets/Certificates/web-trainner.png",
+        "/assets/Certificates/mobile-trainner.png",
+        "/assets/Certificates/pf-score.png",
+    ]
+
+    data.forEach(certificateData => {
+       document.getElementById("profile-cna-list-web").innerHTML += `<img src="${certificateData}">`
+       document.getElementById("profile-cna-list-mobile").innerHTML += `<img src="${certificateData}">`
+    });
+}
+
 function setupWindowListener() {
-    $("#btn-sidebar", window.parent.document).css({
-        "display": (window.innerWidth <= 1250) ? "block" : "none"
-    })
-    $("#web-nav", window.parent.document).css({
-        "display": (window.innerWidth <= 1250) ? "none" : "flex"
-    })
-    window.onresize = function() {
+    const windowListener = () => {
         $("#btn-sidebar", window.parent.document).css({
             "display": (window.innerWidth <= 1250) ? "block" : "none"
         })
         $("#web-nav", window.parent.document).css({
             "display": (window.innerWidth <= 1250) ? "none" : "flex"
         })
+    }
+    windowListener()
+    window.onresize = function() {
+        windowListener()
     }
 }
 
@@ -132,8 +218,7 @@ function resetActiveLinks() {
 
     setTimeout(function () {
         $('#offcanvasNavbar').offcanvas('hide')
-                  
-      }, 500);
+    }, 500);
 
     document.getElementById('nav-prof-mobile').classList.remove("active")
     document.getElementById('nav-edu-mobile').classList.remove("active")

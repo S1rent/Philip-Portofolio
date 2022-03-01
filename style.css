@@ -36,6 +36,7 @@ html, body, main {
     right: 0;
     margin: 0 auto;
     width: 100%;
+    transition: all .25s ease-in-out;
 }
 
 .profile-insight-detail img {
@@ -292,16 +293,77 @@ html, body, main {
     border-bottom: 3px solid var(--cream);
 }
 
+.footer-contact-item {
+    display: flex;
+    padding: 4px 0;
+    flex-wrap: wrap;
+}
+
+.footer-contact-item h5 {
+    min-width: 25%;
+    font-weight: 400;
+}
+
+.footer-contact-item a {
+    width: 50%;
+    font-weight: 400;
+}
+
+.footer-contact-item a h5 {
+    width: 100%; 
+    font-weight: 400;
+}
+
 /* Colors */
 .bg-cream {
     background-color: var(--cream) !important;
 }
 
+.bg-light-cream {
+    background-color: var(--lightcream) !important;
+}
+
+
 .bg-white {
     background-color: var(--white) !important;
 }
 
-@media only screen and (max-width: 1033px) {
+.footer-section {
+    display: flex;
+    width: 100%;
+}
+
+.footer-contact-section {
+    width: 50%;
+}
+
+.footer-email-section {
+    width: 50%;
+}
+
+@media only screen and (max-width: 1210px) {
+    .profile-insight-detail-right {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1210px) {
+    .footer-section {
+        display: block !important;
+    }
+
+    .footer-contact-section {
+        width: 100%;
+    }
+
+    .footer-email-section {
+        width: 100%;
+        margin-top: 64px;
+    }
+}
+
+@media only screen and (max-width: 1210px) {
     .profile-insight-detail {
         top: 10%;
     }
@@ -322,8 +384,8 @@ html, body, main {
 @media only screen and (max-width: 800px) {
     .profile-insight-detail-left {
         margin-left: 16px;
-        width: 300px;
-        min-width: 350px;
+        width: 350px;
+        min-width: 400px;
     }
 
     .profile-insight-detail-left article {
@@ -347,11 +409,20 @@ html, body, main {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 595px) {
+    .footer-contact-item {
+        display: block !important;
+        margin-top: 16px;
+    }
+}
+
+@media only screen and (max-width: 542px) {
     .profile-insight-detail-left {
         min-width: 300px;
     }
+}
 
+@media only screen and (max-width: 480px) {
     .profile-insight-detail-left h4 {
         font-size: 28px;
         padding-bottom: 16px !important;

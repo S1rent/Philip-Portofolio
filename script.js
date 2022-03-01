@@ -266,10 +266,16 @@ function scrollTop() {
 
 function checkResolution() {
     $("#profile-sm-detail", window.parent.document).css({
-        "display": (window.innerWidth <= 1033) ? "block" : "none"
+        "display": (window.innerWidth <= 1210) ? "block" : "none"
+    })
+    $("#footer-section-mobile", window.parent.document).css({
+        "display": (window.innerWidth <= 1210) ? "block" : "none"
     })
     $("#profile-detail", window.parent.document).css({
-        "display": (window.innerWidth > 1033) ? "block" : "none"
+        "display": (window.innerWidth > 1210) ? "block" : "none"
+    })
+    $("#footer-section-web", window.parent.document).css({
+        "display": (window.innerWidth > 1210) ? "block" : "none"
     })
 }
 
@@ -305,7 +311,7 @@ function navigateToEducations() {
     resetActiveLinks()
     document.getElementById('nav-edu-mobile').classList.add("active")
     document.getElementById('nav-edu').classList.add("active")
-    if (window.innerWidth <= 1033) {
+    if (window.innerWidth <= 1210) {
         document.getElementById('edunav-mobile').scrollIntoView()
     } else {
         document.getElementById('edunav').scrollIntoView()
@@ -316,7 +322,7 @@ function navigateToExperiences() {
     resetActiveLinks()
     document.getElementById('nav-exp-mobile').classList.add("active")
     document.getElementById('nav-exp').classList.add("active")
-    if (window.innerWidth <= 1033) {
+    if (window.innerWidth <= 1210) {
         document.getElementById('expnav-mobile').scrollIntoView()
     } else {
         document.getElementById('expnav').scrollIntoView()
@@ -327,7 +333,7 @@ function navigateToSkills() {
     resetActiveLinks()
     document.getElementById('nav-skill-mobile').classList.add("active")
     document.getElementById('nav-skill').classList.add("active")
-    if (window.innerWidth <= 1033) {
+    if (window.innerWidth <= 1210) {
         document.getElementById('skillnav-mobile').scrollIntoView()
     } else {
         document.getElementById('skillnav').scrollIntoView()
@@ -338,7 +344,7 @@ function navigateToProjects() {
     resetActiveLinks()
     document.getElementById('nav-proj-mobile').classList.add("active")
     document.getElementById('nav-proj').classList.add("active")
-    if (window.innerWidth <= 1033) {
+    if (window.innerWidth <= 1210) {
         document.getElementById('projnav-mobile').scrollIntoView()
     } else {
         document.getElementById('projnav').scrollIntoView()
@@ -349,7 +355,7 @@ function navigateToCertificatesAndAchievements() {
     resetActiveLinks()
     document.getElementById('nav-cna-mobile').classList.add("active")
     document.getElementById('nav-cna').classList.add("active")
-    if (window.innerWidth <= 1033) {
+    if (window.innerWidth <= 1210) {
         document.getElementById('cnanav-mobile').scrollIntoView()
     } else {
         document.getElementById('cnanav').scrollIntoView()

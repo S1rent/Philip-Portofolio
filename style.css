@@ -12,7 +12,7 @@ html, body, main {
     margin: 0;
     font-family: 'Poppins', sans-serif !important;
     transition: 2s ease-in 1s;
-    min-width: 350px !important;
+    min-width: 368px !important;
     scroll-behavior: smooth;
 }
 
@@ -472,5 +472,14 @@ html, body, main {
 
     .profile-cna img {
         height: 250px;
+    }
+}
+
+@media only screen and (max-width: 403px) {
+    .profile-cna img, .project-list article, .slp-wrapper {
+        min-width: 250px;
+    }
+    .profile-insight-detail-right h1 {
+        font-size: 96px;
     }
 }

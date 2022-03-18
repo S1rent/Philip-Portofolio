@@ -198,6 +198,14 @@ html, body, main {
     color: white;
 }
 
+#btn-sidebar {
+    display: none;
+}
+
+#web-nav {
+    display: none;
+}
+
 .accordion-button:not(.collapsed) {
     background-color: white !important;
     box-shadow: none !important; 

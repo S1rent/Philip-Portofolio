@@ -7,7 +7,7 @@ export const educationData =
         details: [
             {
                 detailTitle: "Student - Bachelor's Degree",
-                description: `Majoring in Computer Science, Minoring in Software Engineering.<br>Currently in the 6th Semester with 3.95 GPA`
+                description: `Majoring in Computer Science, Minoring in Software Engineering.<br>Currently in the 6th Semester with 3.96 GPA`
             }
         ]
     },

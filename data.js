@@ -219,6 +219,12 @@ export const projectData =
         projectDescription: "BINUSMAYA is the newest Learning Management System developed for Students and Lecturers to enhance and support their activity in BINUS University",
         projectLink: "https://apps.apple.com/id/app/binusmaya/id1499309793?l=id"
     },
+    {
+        projectIcon: "assets/ic-frawlsalla.png",
+        projectTitle: "Frawlsalla",
+        projectDescription: "The project name is called Frawlsalla, which is a website for Frawlsalla game (Brawlhalla) that contains basic information such as events, screenshots, characters, register, and many more things. This website is created using HTML, CSS, Javascript, also Photoshop (for the resources).This Project is created for my final submission of the Human Computer Interaction course in my 3rd semester.",
+        projectLink: "https://frawlsallabypfr.netlify.app/index.html"
+    },
 ]
 export const projectTargetSection = ["profile-projects-list-web", "profile-projects-list-mobile"]
 

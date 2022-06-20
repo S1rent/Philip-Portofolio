@@ -114,7 +114,7 @@ export const skillData =
             },
             {
                 skillName: "C#",
-                progress: 70
+                progress: 80
             },
             {
                 skillName: "Java",
@@ -225,6 +225,12 @@ export const projectData =
         projectDescription: "The project name is called Frawlsalla, which is a website for Frawlsalla game (Brawlhalla) that contains basic information such as events, screenshots, characters, register, and many more things. This website is created using HTML, CSS, Javascript, also Photoshop (for the resources).This Project is created for my final submission of the Human Computer Interaction course in my 3rd semester.",
         projectLink: "https://frawlsallabypfr.netlify.app/index.html"
     },
+    {
+        projectIcon: "assets/ic-noir.png",
+        projectTitle: "No!r",
+        projectDescription: "No!r is a project for my Dicoding Preliminary Web Certification (Belajar Dasar Pemrograman Web). Which is a static fashion catalog website created using HTML, CSS, and Javascript.",
+        projectLink: "https://noirbyphilip.netlify.app/"
+    },
 ]
 export const projectTargetSection = ["profile-projects-list-web", "profile-projects-list-mobile"]
 
@@ -241,6 +247,9 @@ export const certificateData =
     "/assets/Certificates/itdiv-am.png",
     "/assets/Certificates/web-trainner.png",
     "/assets/Certificates/mobile-trainner.png",
-    "/assets/Certificates/pf-score.png",
+    "/assets/Certificates/web-p.png",
+    "/assets/Certificates/js-lan.png",
+    "/assets/Certificates/swift-lan.png",
+    "/assets/Certificates/kotlin-lan.png",
 ]
 export const certificateTargetSection = ["profile-cna-list-web", "profile-cna-list-mobile"]

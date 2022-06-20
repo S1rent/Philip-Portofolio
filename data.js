@@ -227,8 +227,8 @@ export const projectData =
     },
     {
         projectIcon: "assets/ic-noir.png",
-        projectTitle: "No!r",
-        projectDescription: "No!r is a project for my Dicoding Preliminary Web Certification (Belajar Dasar Pemrograman Web). Which is a static fashion catalog website created using HTML, CSS, and Javascript.",
+        projectTitle: "NO!R",
+        projectDescription: "NO!R is a project for my Dicoding Preliminary Web Certification (Belajar Dasar Pemrograman Web). Which is a static fashion catalog website created using HTML, CSS, and Javascript.",
         projectLink: "https://noirbyphilip.netlify.app/"
     },
 ]

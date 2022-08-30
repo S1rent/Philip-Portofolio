@@ -231,6 +231,12 @@ export const projectData =
         projectDescription: "NO!R is a project for my Dicoding Preliminary Web Certification (Belajar Dasar Pemrograman Web). Which is a static fashion catalog website created using HTML, CSS, and Javascript.",
         projectLink: "https://noirbyphilip.netlify.app/"
     },
+    {
+        projectIcon: "assets/ic-neo.png",
+        projectTitle: "Neo Bookshelf",
+        projectDescription: "Neo Bookshelf is a project for my Dicoding Second Level Web Certification (Belajar Membuat Front-End Web untuk Pemula). Which is a dynamic website created using HTML, CSS, and Javascript and Local Web Storage to manage book's.",
+        projectLink: "https://neobookshelfbyphilip.netlify.app/"
+    },
 ]
 export const projectTargetSection = ["profile-projects-list-web", "profile-projects-list-mobile"]
 
@@ -251,5 +257,7 @@ export const certificateData =
     "/assets/Certificates/js-lan.png",
     "/assets/Certificates/swift-lan.png",
     "/assets/Certificates/kotlin-lan.png",
+    "/assets/Certificates/web-fe.png",
+    "/assets/Certificates/web-react-basic.png"
 ]
 export const certificateTargetSection = ["profile-cna-list-web", "profile-cna-list-mobile"]

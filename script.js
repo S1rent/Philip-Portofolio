@@ -1,6 +1,6 @@
 import * as Data from './data.js'
 
-$(document).ready(function() {
+$(document).ready(function () {
     let buttonTop = document.getElementById("btn-top")
     buttonTop.style.display = "none"
 
@@ -9,7 +9,7 @@ $(document).ready(function() {
     scrollHandler(buttonTop)
     setupStylingFromResolution()
     setupButtonScrollToTop(buttonTop)
-    
+
     loadEducationData()
     loadExperienceData()
     loadSkillsData()
@@ -23,14 +23,14 @@ function loadEducationData() {
             let items = ""
             educationData.details.forEach(item => {
                 items +=
-                `
+                    `
                     <li class="item-details">
                         <h5>${ item.detailTitle }</h5> ${ item.description }
                     </li>
                 `
             });
-            document.getElementById(targetSection).innerHTML += 
-            `
+            document.getElementById(targetSection).innerHTML +=
+                `
                 <article class="education-item">
                     <img class="rounded-10" src="${ educationData.educationIcon }">
                     <div class="px-4">
@@ -56,13 +56,13 @@ function loadExperienceData() {
             experienceData.details.forEach(item => {
                 let jobDeskItems = ""
                 item.jobDesks.forEach(jobDesk => {
-                    jobDeskItems += 
-                    `
+                    jobDeskItems +=
+                        `
                         <li>${ jobDesk }</li>
                     `
                 });
                 items +=
-                `
+                    `
                     <li class="item-details">
                         <h5>${ item.detailTitle }</h5>
                         <h6>
@@ -74,8 +74,8 @@ function loadExperienceData() {
                     </li>
                 `
             });
-            document.getElementById(targetSection).innerHTML += 
-            `
+            document.getElementById(targetSection).innerHTML +=
+                `
                 <article class="education-item">
                     <img class="rounded-10" src="${ experienceData.experienceIcon }">
                     <div class="px-4">
@@ -99,8 +99,8 @@ function loadSkillsData() {
         let items = ""
 
         skillData.items.forEach(item => {
-            items += 
-            `
+            items +=
+                `
                 <div class="slp-wrapper">
                     <h5 class="fw-bolder">${ item.skillName }</h5>
                     <div class="progress bg-dark rounded-pill">
@@ -111,8 +111,8 @@ function loadSkillsData() {
         });
 
         Data.skillTargetSection.forEach(section => {
-            document.getElementById(section).innerHTML += 
-            `
+            document.getElementById(section).innerHTML +=
+                `
                 <li>
                     <article>
                         <h4>${ skillData.title }</h4>
@@ -122,19 +122,22 @@ function loadSkillsData() {
                     </article>
                 </li>
             `
-            });
+        });
     });
 }
 
 function loadProjectsData() {
     Data.projectData.forEach(projectData => {
         Data.projectTargetSection.forEach(section => {
-            document.getElementById(section).innerHTML += 
-            `
+            document.getElementById(section).innerHTML +=
+                `
                 <article class="d-flex">
                     <img class="rounded-10" src="${ projectData.projectIcon }">
                     <div class="px-4">
                         <h4 class="fw-bold">${ projectData.projectTitle }</h4>
+                        <div style="background-color: ${projectData.projectStatus === 1 ? "#198754" : "#fec106"} ; padding: 4px 8px; display: inline-block; color: white; font-size: 18px; font-weight: bolder; margin-bottom: 8px;">
+                            ${projectData.projectStatus === 1 ? "Completed" : "In Progress"}
+                        </div>
                         <h6>${ projectData.projectDescription }</h6>
                         <a href="${ projectData.projectLink }" target="_blank">
                             <button class="btn-view">
@@ -145,7 +148,7 @@ function loadProjectsData() {
                 </article>
             `
         });
-     });
+    });
 }
 
 function loadCertificatesData() {
@@ -166,84 +169,84 @@ function setupWindowListener() {
         })
     }
     windowListener()
-    window.onresize = function() {
+    window.onresize = function () {
         windowListener()
     }
 }
 
 function setupNavigation() {
-    $("#nav-prof-mobile").click(function() {
+    $("#nav-prof-mobile").click(function () {
         navigateToProfile()
     })
-    
-    $("#nav-edu-mobile").click(function() {
+
+    $("#nav-edu-mobile").click(function () {
         navigateToEducations()
     })
 
-    $("#nav-exp-mobile").click(function() {
+    $("#nav-exp-mobile").click(function () {
         navigateToExperiences()
     })
 
-    $("#nav-skill-mobile").click(function() {
+    $("#nav-skill-mobile").click(function () {
         navigateToSkills()
     })
 
-    $("#nav-proj-mobile").click(function() {
+    $("#nav-proj-mobile").click(function () {
         navigateToProjects()
     })
 
-    $("#nav-cna-mobile").click(function() {
+    $("#nav-cna-mobile").click(function () {
         navigateToCertificatesAndAchievements()
     })
 
-    $("#nav-prof").click(function() {
+    $("#nav-prof").click(function () {
         navigateToProfile()
     })
-    
-    $("#nav-edu").click(function() {
+
+    $("#nav-edu").click(function () {
         navigateToEducations()
     })
 
-    $("#nav-exp").click(function() {
+    $("#nav-exp").click(function () {
         navigateToExperiences()
     })
 
-    $("#nav-skill").click(function() {
+    $("#nav-skill").click(function () {
         navigateToSkills()
     })
 
-    $("#nav-proj").click(function() {
+    $("#nav-proj").click(function () {
         navigateToProjects()
     })
 
-    $("#nav-cna").click(function() {
+    $("#nav-cna").click(function () {
         navigateToCertificatesAndAchievements()
     })
 }
 
 function setupStylingFromResolution() {
     checkResolution()
-    $(window).resize(function() {
+    $(window).resize(function () {
         checkResolution()
     })
 }
 
 function setupButtonScrollToTop(buttonTop) {
-    window.onscroll = function() {
+    window.onscroll = function () {
         scrollHandler(buttonTop)
     }
 
-    $("#btn-top").click(function() {
+    $("#btn-top").click(function () {
         scrollTop()
     })
 
-    $('#btn-top').on('mouseenter', function(e) {
+    $('#btn-top').on('mouseenter', function (e) {
         $('#icn-arrow-top').css({
             "filter": "invert(97%) sepia(100%) saturate(12%) hue-rotate(211deg) brightness(102%) contrast(104%)"
         })
     })
 
-    $('#btn-top').on('mouseleave', function(e) {
+    $('#btn-top').on('mouseleave', function (e) {
         $('#icn-arrow-top').css({
             "filter": "invert(0%) sepia(5%) saturate(7482%) hue-rotate(261deg) brightness(98%) contrast(106%)"
         })
@@ -291,7 +294,7 @@ function resetActiveLinks() {
     document.getElementById('nav-skill-mobile').classList.remove("active")
     document.getElementById('nav-proj-mobile').classList.remove("active")
     document.getElementById('nav-cna-mobile').classList.remove("active")
-    
+
     document.getElementById('nav-prof').classList.remove("active")
     document.getElementById('nav-edu').classList.remove("active")
     document.getElementById('nav-exp').classList.remove("active")

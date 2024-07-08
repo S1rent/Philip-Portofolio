@@ -224,7 +224,29 @@ export const skillData = [{
 
 export const skillTargetSection = ["profile-skills-list-web", "profile-skills-list-mobile"]
 
-export const projectData = [{
+export const projectData = [
+{
+    projectIcon: "assets/ic-grlpa.png",
+    projectTitle: "GRL@PA Management",
+    projectDescription: "Singaporean Government Project for internal organization management. Participating in Frontend Development using React and Redux",
+    projectLink: "-",
+    projectStatus: 0,
+},
+{
+    projectIcon: "assets/ic-grlpa.png",
+    projectTitle: "GRL@PA User",
+    projectDescription: "Singaporean Government Project for organization member. Participating in Frontend Development using React and Redux",
+    projectLink: "https://grl.pa.gov.sg/grlpa/",
+    projectStatus: 0,
+},
+{
+    projectIcon: "assets/ic-grlpar3.jpg",
+    projectTitle: "GRL@PA Mobile",
+    projectDescription: "Singaporean Government Project. Participating in Frontend Development using React Native and Redux",
+    projectLink: "-",
+    projectStatus: 0,
+},
+{
     projectIcon: "assets/ic-bimob.png",
     projectTitle: "Binus Mobile for Student",
     projectDescription: "Binus Mobile for Student is an Learning Management System developed specifically for Students to enhance and support their learning experience in BINUS University",
@@ -281,27 +303,6 @@ export const projectData = [{
     projectStatus: 1,
 },
 {
-    projectIcon: "assets/ic-grlpa.png",
-    projectTitle: "GRL@PA Management",
-    projectDescription: "Singaporean Government Project for internal organization management. Participating in Frontend Development using React and Redux",
-    projectLink: "-",
-    projectStatus: 0,
-},
-{
-    projectIcon: "assets/ic-grlpa.png",
-    projectTitle: "GRL@PA User",
-    projectDescription: "Singaporean Government Project for organization member. Participating in Frontend Development using React and Redux",
-    projectLink: "-",
-    projectStatus: 0,
-},
-{
-    projectIcon: "assets/ic-grlpar3.jpg",
-    projectTitle: "GRL@PA Mobile",
-    projectDescription: "Singaporean Government Project. Participating in Frontend Development using React Native and Redux",
-    projectLink: "-",
-    projectStatus: 0,
-},
-{
     projectIcon: "assets/ic-laper.jpg",
     projectTitle: "Laperrr",
     projectDescription: "Laperrr is a project for my Dicoding Basic Level iOS Certification. Which is a dynamic website created using Swift RxSwift and Moya API Call.",
@@ -333,6 +334,20 @@ export const projectData = [{
     projectIcon: "assets/ic-tokopedia.jpg",
     projectTitle: "Tokopedia Cheap Copy",
     projectDescription: "Self Improvement Project to mimic tokopedia for iOS using Swift RxSwift and Moya API Call.",
+    projectLink: "-",
+    projectStatus: 1,
+},
+{
+    projectIcon: "assets/ic-mkd.png",
+    projectTitle: "MKD Families",
+    projectDescription: "Client requested project, built using react native and TypeScript. The application is used for their internal church management including features such as member attendance using QR Code, Generating Report from mobile to excel, etc.",
+    projectLink: "-",
+    projectStatus: 1,
+},
+{
+    projectIcon: "assets/ic-general-project.png",
+    projectTitle: "Excel Simple ERP Program",
+    projectDescription: "Client requested project as an interim solutions for ERP management in the company. Built using Ms. Excel VBA",
     projectLink: "-",
     projectStatus: 1,
 },

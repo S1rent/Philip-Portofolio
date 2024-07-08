@@ -133,7 +133,7 @@ function loadProjectsData() {
                 `
                 <article class="d-flex">
                     <img class="rounded-10" src="${ projectData.projectIcon }">
-                    <div class="px-4">
+                    <div class="px-4" style="flex-grow: 1;">
                         <h4 class="fw-bold">${ projectData.projectTitle }</h4>
                         <div style="background-color: ${projectData.projectStatus === 1 ? "#198754" : "#fec106"} ; padding: 4px 8px; display: inline-block; color: white; font-size: 18px; font-weight: bolder; margin-bottom: 8px;">
                             ${projectData.projectStatus === 1 ? "Completed" : "In Progress"}
